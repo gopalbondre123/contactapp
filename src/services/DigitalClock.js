@@ -15,7 +15,7 @@ function DigitalClock() {
 
     return (
         <div style={{color:"white",height: "34px",
-        fontSize: "23px",marginLeft:"800px"}}>
+        fontSize: "23px",marginLeft:"793px"}}>
             
             {ctime}
         </div>

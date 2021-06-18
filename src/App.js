@@ -12,6 +12,10 @@ import styled ,{keyframes} from 'styled-components';
 import Logo from './components/images/g.jpg';
 import nature from './components/images/nature2.jpg';
 import DigitalClock from './services/DigitalClock';
+import Contact from './components/contact';
+
+
+
 
 
 //const tadaBounce = merge(tada, bounce);
@@ -66,7 +70,7 @@ function App() {
       <Nav.Link href="#home"><StyledLink exact to="/" >Home</StyledLink></Nav.Link>
       <Nav.Link href="#features"><StyledLink exact to="/view" >View </StyledLink></Nav.Link>
       <Nav.Link href="#pricing"><StyledLink exact to="/register"   >Register</StyledLink></Nav.Link>
-    
+      <Nav.Link href="#home"><StyledLink exact to="/contact" >contact</StyledLink></Nav.Link>
     </Nav>
     
 
@@ -84,7 +88,11 @@ function App() {
           <Route path="/view">
             <EmployeeListComponent />
           </Route>
-          
+
+          <Route path="/contact">
+            <Contact />
+          </Route>
+         
 
           <Route exact path="/register">
            <EmployeeRegister/>
@@ -94,7 +102,7 @@ function App() {
            
           </Route>
 
-         
+        
           <Route exact path="/">  {/* to go home page   if any wrong url enter  then remove exact  */}
             <Home />
             
